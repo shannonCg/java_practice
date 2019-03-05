@@ -1,4 +1,4 @@
-package proxy;
+package proxy.withAnnotationProxy;
 
 public interface MethodTest {
 	

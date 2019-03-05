@@ -1,8 +1,9 @@
-package proxy;
+package proxy.withAnnotationProxy;
 
 import java.lang.reflect.Method;
 
-import proxy.annotation.ClassName;
+import proxy.withAnnotationProxy.annotation.ClassName;
+
 
 public class Main {
 

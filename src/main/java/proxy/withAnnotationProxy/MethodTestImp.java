@@ -1,8 +1,8 @@
-package proxy;
+package proxy.withAnnotationProxy;
 
-import proxy.annotation.ClassName;
-import proxy.annotation.MethodName;
-import proxy.annotation.MethodParamName;
+import proxy.withAnnotationProxy.annotation.ClassName;
+import proxy.withAnnotationProxy.annotation.MethodName;
+import proxy.withAnnotationProxy.annotation.MethodParamName;
 
 @ClassName("MethodTestImp")
 public class MethodTestImp implements MethodTest {

@@ -1,4 +1,4 @@
-package proxy.annotation;
+package proxy.withAnnotationProxy.annotation;
 
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
