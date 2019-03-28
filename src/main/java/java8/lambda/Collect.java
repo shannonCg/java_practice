@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /*
- * 產生collection
+ * produce collection
  */
 public class Collect {
 

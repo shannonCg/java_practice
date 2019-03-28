@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /*
- * ¦bJava¤¤¥i¥H¨Ï¥ÎPropertiesÃş§O¨ÓÅª¨ú³]©wÀÉ¡A¦p¤U­±µ{¦¡­nÅªconfig.propertiesªºÀÉ®×¡A¦ÓÀÉ®×¤º®e¦p¤U¡G
+ * åœ¨Javaä¸­å¯ä»¥ä½¿ç”¨Propertiesé¡åˆ¥ä¾†è®€å–è¨­å®šæª”ï¼Œå¦‚ä¸‹é¢ç¨‹å¼è¦è®€config.propertiesçš„æª”æ¡ˆï¼Œè€Œæª”æ¡ˆå…§å®¹å¦‚ä¸‹ï¼š
  * 	localhost=jdbc:mysql://localhost/db
  *  username=user
  *  password=1234567

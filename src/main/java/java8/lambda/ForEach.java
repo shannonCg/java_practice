@@ -3,7 +3,7 @@ package java8.lambda;
 import java.util.stream.IntStream;
 
 /*
- * for迴圈
+ * for loop
  */
 public class ForEach {
 

@@ -21,7 +21,7 @@ public class FinallyRunTest {
 	}
 	
 	static class FinallyTest{
-		//finallyªº°õ¦æ¶¶§Ç¦breturn°Ê§@°õ¦æ¤§«á¡Bªğ¦^¦^¶Ç­È¤§«e
+		//finallyçš„åŸ·è¡Œé †åºåœ¨returnå‹•ä½œåŸ·è¡Œä¹‹å¾Œã€è¿”å›å›å‚³å€¼ä¹‹å‰
 		public String getWord1(){
 			String word = "A";
 			try{
@@ -43,8 +43,8 @@ public class FinallyRunTest {
 			return word;
 		}
 		
-		//¥Ñ©ófinallyªº°õ¦æ¶¶§Ç¦breturn°Ê§@°õ¦æ¤§«á¡Bªğ¦^¦^¶Ç­È¤§«e¡A¥Breturnªºªğ¦^­È·|«O¯d
-		//¡A©Ò¥H¦bfinally°Ï¶ô§ó§ïÅÜ¼Æ­È¤£·|§ïÅÜ¦^¶Ç­È
+		//ç”±æ–¼finallyçš„åŸ·è¡Œé †åºåœ¨returnå‹•ä½œåŸ·è¡Œä¹‹å¾Œã€è¿”å›å›å‚³å€¼ä¹‹å‰ï¼Œä¸”returnçš„è¿”å›å€¼æœƒä¿ç•™
+		//ï¼Œæ‰€ä»¥åœ¨finallyå€å¡Šæ›´æ”¹è®Šæ•¸å€¼ä¸æœƒæ”¹è®Šå›å‚³å€¼
 		public String getWord2(){
 			String word = "A";
 			try{
@@ -60,6 +60,7 @@ public class FinallyRunTest {
 			}
 		}
 		
+		//è‹¥finallyå€å¡Šæœ‰returnæ•˜è¿°ï¼Œå‰‡finallyå€å¡Šå…§çš„returnåŸ·è¡Œå®Œå°±æœƒä¸­æ–·åŸå…ˆcatchå€å¡Šè¦åŸ·è¡Œè¿”å›å€¼çš„å‹•ä½œ
 		public String getWord3(){
 			String word = "A";
 			try{

@@ -7,9 +7,10 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /*
- * ¸ê®ÆªºÂà´«¡G­Y¦³¤@­Ó¤èªk·|±N¬Y¿é¤J¸ê®Æ(input)Âà´«¦¨¥t¤@­Ó¸ê®Æ¿é¥X(output)®É¡A¥i¥H¨Ï¥Îmap¤èªk
+ * è³‡æ–™çš„è½‰æ›ï¼šè‹¥æœ‰ä¸€å€‹æ–¹æ³•æœƒå°‡æŸè¼¸å…¥è³‡æ–™(input)è½‰æ›æˆå¦ä¸€å€‹è³‡æ–™è¼¸å‡º(output)æ™‚ï¼Œå¯ä»¥ä½¿ç”¨mapæ–¹æ³•
  * map(T -> T)
  */
+
 public class Map {
 
 	public static void main(String[] args) {

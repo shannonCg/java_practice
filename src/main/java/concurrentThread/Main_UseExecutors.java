@@ -10,7 +10,7 @@ public class Main_UseExecutors {
 		ExecutorService executor = Executors.newWorkStealingPool();
 		
 		executor.submit(() -> System.out.println(CountValue.getResult(5)));
-//		executor.shutdown(); // 關閉pool裡所有的thread
+//		executor.shutdown(); // close all threads in the pool
 		executor.submit(() -> System.out.println(CountValue.getResult(6)));
 		executor.shutdown();
 	}

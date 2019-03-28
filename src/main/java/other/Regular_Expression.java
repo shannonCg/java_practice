@@ -7,12 +7,12 @@ import java.util.*;
 public class Regular_Expression {
 
 	public static void main(String[] args) {
-//		String regex = ".*\\.jpg$|.*\\.txt$|"; //¬d¸ß¦r§À¬O.jpg©Î.txt
-//		String regex = "^[^\\s]+[A-Za-z\\s]{1,21}[^\\s]+$"; //¤£¤¹³\«e«áªÅ®æ,¦ı¬O¥i¥H¦b¦rªº¤¤¶¡¥[ªÅ¥Õ
-//		String regex = "[^/:*?<>|\\x5c]+"; //¤£¤¹³\¯S®í²Å¸¹¦b¦r¦ê¤¤(/:*?<>|\), ¨ä¤¤\ªºascii¤Q¤»¶i¦ì¬°\x5c
-//		String regex = "[^~!@$%^&*()_+{}|\\[\\]?'\"/><.,:;]+"; //¤£¤¹³\¯S®í²Å¸¹¦b¦r¦ê¤¤(~!@$%^&*()_+{}|[]¡¦¡¨?/>.<,:;)
-//		String regex = ".*\\Q[abc]\\E.*"; //³¡¥÷¦r¦ê²Å¦X,¥B¤ñ¹ïªº¦r¦ê¤¤¨ú®ø¯S®í¦r¤¸ªº¥\¯à(/Q©M/E¤§¶¡ªº¦r³£¬°´¶³q¦r¤¸)
-		String regex = ".*[abc].*"; //³¡¥÷¦r¦ê²Å¦X,¯S®í¦r¤¸ªº¥\¯à¤´¦³§@¥Î
+//		String regex = ".*\\.jpg$|.*\\.txt$|"; //æŸ¥è©¢å­—å°¾æ˜¯.jpgæˆ–.txt
+//		String regex = "^[^\\s]+[A-Za-z\\s]{1,21}[^\\s]+$"; //ä¸å…è¨±å‰å¾Œç©ºæ ¼,ä½†æ˜¯å¯ä»¥åœ¨å­—çš„ä¸­é–“åŠ ç©ºç™½
+//		String regex = "[^/:*?<>|\\x5c]+"; //ä¸å…è¨±ç‰¹æ®Šç¬¦è™Ÿåœ¨å­—ä¸²ä¸­(/:*?<>|\), å…¶ä¸­\çš„asciiåå…­é€²ä½ç‚º\x5c
+//		String regex = "[^~!@$%^&*()_+{}|\\[\\]?'\"/><.,:;]+"; //ä¸å…è¨±ç‰¹æ®Šç¬¦è™Ÿåœ¨å­—ä¸²ä¸­(~!@$%^&*()_+{}|[]â€™â€?/>.<,:;)
+//		String regex = ".*\\Q[abc]\\E.*"; //éƒ¨ä»½å­—ä¸²ç¬¦åˆ,ä¸”æ¯”å°çš„å­—ä¸²ä¸­å–æ¶ˆç‰¹æ®Šå­—å…ƒçš„åŠŸèƒ½(/Qå’Œ/Eä¹‹é–“çš„å­—éƒ½ç‚ºæ™®é€šå­—å…ƒ)
+		String regex = ".*[abc].*"; //éƒ¨ä»½å­—ä¸²ç¬¦åˆ,ç‰¹æ®Šå­—å…ƒçš„åŠŸèƒ½ä»æœ‰ä½œç”¨
 		
 //		String compareStr = "sfewo.TXT";
 //		String compareStr = "aaa.JPG";
@@ -70,15 +70,15 @@ public class Regular_Expression {
 		testStr = testStr.substring(0,testStr.length()-1);
 		System.out.println(testStr);
 		
-		//¥u¤¹³\¤¤¤å¦r¤¸
-		String chinese = "±N±N";
+		//åªå…è¨±ä¸­æ–‡å­—å…ƒ
+		String chinese = "å°‡å°‡";
 		String pattern1 = "[\\u4e00-\\u9fff]*";
 		String pattern2 = "[\\x{4e00}-\\x{9fa5}]*";
 		if(chinese.matches(pattern1)){
 			System.out.println("hihihi");
 		}
 		
-		//¥u¤¹³\email
+		//åªå…è¨±email
 		String email = "ss@google.tws";
 		String pattern3 = "([\\w-\\.]+)@((?:[\\w]+\\.)+)([a-zA-Z]{2,4})";
 		if(email.matches(pattern3)){

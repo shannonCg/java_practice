@@ -31,13 +31,13 @@ public class CollectionsTest {
 		List<Long> list2 = Arrays.asList((long)3,(long)4,(long)5);
 		
 		CollectionsTest collect = new CollectionsTest();
-		//¨Ã¶°
+		//ä¸¦é›†
 		List<Long> inter = collect.intersect(list1, list2);
 		System.out.println(inter);
-		//®t¶°
+		//å·®é›†
 		List<Long> diff = collect.diff(list1, list2);
 		System.out.println(diff);
-		//¥æ¶°
+		//äº¤é›†
 		List<Long> union = collect.union(list1, list2);
 		System.out.println(union);
 	}

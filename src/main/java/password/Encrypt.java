@@ -6,7 +6,7 @@ import java.security.NoSuchAlgorithmException;
 public class Encrypt {
 	
 	/*
-	 * ¶Ç¤J­n¥[±Kªº¦r¦ê(¨Ï¥Îsha-512¥[±K¡^¡Aªğ¦^SHA-512¦r¦ê
+	 * å‚³å…¥è¦åŠ å¯†çš„å­—ä¸²(ä½¿ç”¨sha-512åŠ å¯†ï¼‰ï¼Œè¿”å›SHA-512å­—ä¸²
 	 */
 	public String encrypt_sha512(final String strText){
 		return encrypt(strText, EncryptType.SHA512);
@@ -18,15 +18,15 @@ public class Encrypt {
 		if (strText != null && strText.length() > 0){
 			
 			try{
-				// SHA¥[±K¶}©l
-				// ³Ğ«Ø¥[±K¹ï¶H ¨Ã¶Ç¤J¥[±KÃş«¬
+				// SHAåŠ å¯†é–‹å§‹
+				// å‰µå»ºåŠ å¯†å°è±¡ ä¸¦å‚³å…¥åŠ å¯†é¡å‹
 				MessageDigest messageDigest = MessageDigest.getInstance(strType.getValue());
-				// ¶Ç¤J­n¥[±Kªº¦r¦ê
+				// å‚³å…¥è¦åŠ å¯†çš„å­—ä¸²
 				messageDigest.update(strText.getBytes());
-				// ±o¨ì¥[±K«áªºbyteÃş«¬µ²ªG
+				// å¾—åˆ°åŠ å¯†å¾Œçš„byteé¡å‹çµæœ
 				byte byteBuffer[] = messageDigest.digest();
 				
-				// ±NbyteÂà´«¬° string
+				// å°‡byteè½‰æ›ç‚º string
 				StringBuffer strHexString = new StringBuffer();
 				for (int i = 0; i < byteBuffer.length; i++){
 					String hex = Integer.toHexString(0xff & byteBuffer[i]);
@@ -35,7 +35,7 @@ public class Encrypt {
 					}
 					strHexString.append(hex);
 				}
-				// ±o¨ìªğ¦^µ²ªG
+				// å¾—åˆ°è¿”å›çµæœ
 				strResult = strHexString.toString();
 			}catch (NoSuchAlgorithmException e){
 				e.printStackTrace();
