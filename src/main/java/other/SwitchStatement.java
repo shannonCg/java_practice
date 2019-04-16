@@ -1,5 +1,8 @@
 package other;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class SwitchStatement {
 
 	public static void main(String[] args) {
@@ -25,8 +28,7 @@ public class SwitchStatement {
 			System.out.println("this is "+i);
 			System.out.println("--------");			
 		}
-			
-
+		
 	}
 
 }
