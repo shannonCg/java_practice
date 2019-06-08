@@ -1,11 +1,11 @@
-package other;
+package test_simple;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
-public class CollectionsTest {
+public class TwoArrayTest {
 	
 	public <T> List<T> intersect(List<T> ls1, List<T> ls2){
 		List<T> list = new ArrayList<>(ls1);
@@ -30,7 +30,7 @@ public class CollectionsTest {
 		List<Long> list1 = Arrays.asList((long)1,(long)2,(long)3);
 		List<Long> list2 = Arrays.asList((long)3,(long)4,(long)5);
 		
-		CollectionsTest collect = new CollectionsTest();
+		TwoArrayTest collect = new TwoArrayTest();
 		//並集
 		List<Long> inter = collect.intersect(list1, list2);
 		System.out.println(inter);

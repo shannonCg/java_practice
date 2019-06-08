@@ -1,4 +1,4 @@
-package other;
+package test_simple;
 
 public class BoxingTest {
 	//當兩個相同類別的外覆類別實體透過boxing所產生，為了節省記憶體的使用會共用同一個物件，但只限定:

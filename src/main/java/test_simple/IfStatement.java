@@ -1,4 +1,4 @@
-package other;
+package test_simple;
 
 public class IfStatement {
 
