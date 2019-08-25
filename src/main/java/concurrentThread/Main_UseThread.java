@@ -1,6 +1,6 @@
 package concurrentThread;
 
-public class Main_UseSingleThread {
+public class Main_UseThread {
 
 	public static void main(String[] args) {
 		
